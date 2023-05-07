@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Srvices Agency">
+    <meta name="author" content="Nourha A. AboElenen">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Hosting, Coding, Programming">
+    <title>Luna</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="./css/aos.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ed78bfa33.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <!--Header-->
+    <header class="wave">
+        <div class="container">
+            <!--Navigation Bar-->
+            <nav class="flex">
+                <h1>Luna.co</h1>
+                <ul class="main unstyle flex">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="./features.html">Features</a></li>
+                    <li><a href="./docs.html">Docs</a></li>
+                </ul>
+                <!--Collapse Menu-->
+                <button id="toggle" onclick="dropMenu()"><img id="icon" src="./images/menu.png"></button>
+                <ul id="collapse" class="unstyle hidden">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./features.html">Features</a></li>
+                    <li><a href="./docs.html">Docs</a></li>
+                </ul>
+            </nav>
+            <section class="intro flex"><!--Intro Section-->
+                <div class="about" data-aos="slide-right" data-aos-duration="1000">
+                    <h2>Easier Deployment</h2>
+                    <p>Deplo web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to try a demo of our platform.</p>
+                    <p id="more">We provide your app with the best technologies, and with a sleek and chique design.</p>
+                    <button class="btn" onclick="showMore()" id="btn">Read More</button>
+                </div>
+                <div class="form shadow" data-aos="slide-left" data-aos-duration="1000">
+                    <form>
+                        <h3>Reaquest a Demo</h3>
+                        <input type="text" required placeholder="Name*" name="name">
+                        <input type="text" placeholder="Company Name" name="company">
+                        <input type="email" required placeholder="Email*" name="email">
+                        <input type="submit" value="Send" class="btn">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!--MainContent-->
+    <main>
+        <!--statisticsSection-->
+        <section class="stats">
+            <div class="container">
+                <p data-aos="fade-in" data-aos-duration="3000">Welcome to the best platform for building applications of all types with modern architecture and scaling</p>
+                <div class="numbers grid">
+                    <div class="flex" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="fas fa-server fa-3x"></i>
+                        <span>9,149,905</span>
+                        <span>Deployments</span>
+                    </div>
+                    <div class="flex" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="fas fa-upload fa-3x"></i>
+                        <span>1,233 TB</span>
+                        <span>Puplished</span>
+                    </div>
+                    <div class="flex" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="fas fa-project-diagram fa-3x"></i>
+                        <span>2,705,111</span>
+                        <span>Projects</span>
+                    </div>
+                </div>
+                <div class="plus grid" data-aos="zoom-in" data-aos-duration="3000">
+                    <div>
+                        <img src="./images/cli.png" loading="lazy">
+                    </div>
+                    <div class="flex shadow">Easy to use cross platform CLI</div>
+                    <div class="flex shadow">Deploy in seconds</div>
+                </div>
+            </div>
+        </section>
+        <!--cloudSection-->
+        <section class="cloud">
+            <div class="container flex">
+                <div class="text">
+                    <h2>Extreme Cloud Hosting</h2>
+                    <p>Cloud hosting like you've never seen before. Fast, efficient and scalable.</p>
+                    <button class="btn">Read More</button>
+                </div>
+                <div class="image">
+                    <img src="./images/cloud.png" loading="lazy">
+                </div>
+            </div>
+        </section>
+        <!--languagesSection-->
+        <section class="lang">
+            <h2>Supported Languages</h2>
+            <div class="container flex">
+                <div class="logo shadow flex" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="0">
+                    <span>Node.js</span>
+                    <img src="./images/logos/node.png" alt="node" loading="lazy">
+                </div>
+                <div class="logo shadow flex" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100">
+                    <span>Python</span>
+                    <img src="./images/logos/python.png" alt="python" loading="lazy">
+                </div>
+                <div class="logo shadow flex" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
+                    <span>C#</span>
+                    <img src="./images/logos/csharp.png" alt="csharp" loading="lazy">
+                </div>
+                <div class="logo shadow flex" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="300">
+                    <span>PHP</span>
+                    <img src="./images/logos/php.png" alt="php" loading="lazy">
+                </div>
+                <div class="logo shadow flex" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="400">
+                    <span>Ruby</span>
+                    <img src="./images/logos/ruby.png" alt="ruby" loading="lazy">
+                </div>
+                <div class="logo shadow flex" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="500">
+                    <span>Clojure</span>
+                    <img src="./images/logos/clojure.png" alt="clojure" loading="lazy">
+                </div>
+                <div class="logo shadow flex" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="600">
+                    <span>Scala</span>
+                    <img src="./images/logos/scala.png" alt="scala" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="grid">
+        <div>
+            <span>Luna.co</span>
+            <p>Copyrights&copy; 2021</p>
+        </div>
+        <div>
+            <ul class="unstyle">
+                <li><a href="#">Home</a></li>
+                <li><a href="./features.html">Features</a></li>
+                <li><a href="./docs.html">Docs</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

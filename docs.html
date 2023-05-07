@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Srvices Agency">
+    <meta name="author" content="Nourha A. AboElenen">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Hosting, Coding, Programming">
+    <title>Luna</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="./css/aos.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ed78bfa33.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="container">
+            <!--Navigation Bar-->
+            <nav class="flex">
+                <h1>Luna.co</h1>
+                <ul class="main unstyle flex">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./features.html">Features</a></li>
+                    <li><a href="#" class="active">Docs</a></li>
+                </ul>
+                <!--Collapse Menu-->
+                <button id="toggle" onclick="dropMenu()"><img id="icon" src="./images/menu.png"></button>
+                <ul id="collapse" class="unstyle">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./features.html">Features</a></li>
+                    <li><a href="./docs.html">Docs</a></li>
+                </ul>
+            </nav>
+            <section class="intro flex" data-aos="zoom-in" data-aos-duration="1000"><!--Intro Section-->
+                <div class="text">
+                    <h2>Docs</h2>
+                    <p>Learn how to work with the Loruki platform</p>
+                </div>
+                <div class="image flex">
+                    <img src="./images/docs.png"></img>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!--mainContent-->
+    <main class="docs">
+        <div class="container flex">
+            <!--sideMenu-->
+            <aside class="shadow" data-aos="fade-up" data-aos-duration="1000">
+                <section>
+                    <h4>Essentials</h4>
+                    <ul class="unstyle">
+                        <li><a href="#" class="active">Introduction</a></li>
+                        <li><a href="#">About Luna</a></li>
+                        <li><a href="#">Installation</a></li>
+                    </ul>
+                </section>
+                <section class="deploy">
+                    <h4>Deployment</h4>
+                    <ul class="unstyle">
+                        <li><a href="#">Setting up a Container</a></li>
+                        <li><a href="#">Using the CLI</a></li>
+                        <li><a href="#">Managing Resources</a></li>
+                        <li><a href="#">Ubgrade &amp; Downgrade</a></li>
+                    </ul>
+                </section>
+            </aside>
+            <section class="content shadow" data-aos="fade-up" data-aos-duration="1000">
+                <div>
+                    <h3>Introduction</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo facere perferendis laborum? Similique recusandae incidunt eos dolorum aliquam ipsam unde perspiciatis laudantium totam quam laborum velit, at maxime minus?</p>
+                    <div class="green">
+                        <i class="fas fa-info"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi?
+                    </div>
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam magni eius vitae velit id, atque veritatis! At, vero porro.</p>
+                    <button class="btn">Install CLI</button>
+                </div>
+                <div>
+                    <h4>Recuirements</h4>
+                    <p>Windows 10, Mac OSX, Linux</p>
+                    <p>Node.js v12 or higher</p>
+                </div>
+                <div>
+                    <h4>Install</h4>
+                    <span>Mac (Homebrew)</span>
+                    <div class="black">$ brew install loruki-cli</div>
+                    <span>NPM</span>
+                    <div class="black">$ npm install loruki-cli</div>
+                    <span>Yarn</span>
+                    <div class="black">$ yarn install loruki-cli</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--footer-->
+    <footer class="grid">
+        <div>
+            <span>Luna.co</span>
+            <p>Copyrights&copy; 2021</p>
+        </div>
+        <div>
+            <ul class="unstyle">
+                <li><a href="#">Home</a></li>
+                <li><a href="./features.html">Features</a></li>
+                <li><a href="./docs.html">Docs</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
